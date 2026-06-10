@@ -1,0 +1,105 @@
+{
+  "description": "Daily module rotation state for iceberg-cpp code analysis. Each day one module is analyzed for: logic errors, Java consistency, and completeness.",
+  "last_analyzed_index": 0,
+  "last_analyzed_at": "2026-06-10",
+  "modules": [
+    {
+      "name": "Core/Schema",
+      "cpp_path": "src/iceberg/",
+      "cpp_glob": "src/iceberg/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/",
+      "description": "Core types, schema, table metadata, transforms, partitions, snapshots, file I/O"
+    },
+    {
+      "name": "Arrow",
+      "cpp_path": "src/iceberg/arrow/",
+      "cpp_glob": "src/iceberg/arrow/*.{cc,h}",
+      "java_base": "java/arrow/src/main/java/org/apache/iceberg/arrow/",
+      "description": "Apache Arrow integration: data conversion, I/O, S3 file I/O, registration"
+    },
+    {
+      "name": "Avro",
+      "cpp_path": "src/iceberg/avro/",
+      "cpp_glob": "src/iceberg/avro/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/avro/",
+      "description": "Avro file format: reader, writer, schema utilities, encoding/decoding"
+    },
+    {
+      "name": "Catalog",
+      "cpp_path": "src/iceberg/catalog/",
+      "cpp_glob": "src/iceberg/catalog/**/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/catalog/",
+      "description": "Catalog implementations: Hive, REST, SQL, in-memory catalogs"
+    },
+    {
+      "name": "Data",
+      "cpp_path": "src/iceberg/data/",
+      "cpp_glob": "src/iceberg/data/*.{cc,h}",
+      "java_base": "java/data/src/main/java/org/apache/iceberg/data/",
+      "description": "Data layer: writers, scan task readers, delete filters and loaders"
+    },
+    {
+      "name": "Deletes",
+      "cpp_path": "src/iceberg/deletes/",
+      "cpp_glob": "src/iceberg/deletes/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/deletes/",
+      "description": "Position delete files: bitmap indexes, roaring bitmaps, range consumers"
+    },
+    {
+      "name": "Expression",
+      "cpp_path": "src/iceberg/expression/",
+      "cpp_glob": "src/iceberg/expression/*.{cc,h}",
+      "java_base": "java/api/src/main/java/org/apache/iceberg/expressions/",
+      "description": "Expression system: evaluators, binders, literals, aggregates, manifest/inclusive metrics evaluators"
+    },
+    {
+      "name": "Manifest",
+      "cpp_path": "src/iceberg/manifest/",
+      "cpp_glob": "src/iceberg/manifest/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/manifest/",
+      "description": "Manifest handling: readers, writers, entries, groups, list merging and filtering"
+    },
+    {
+      "name": "Metrics",
+      "cpp_path": "src/iceberg/metrics/",
+      "cpp_glob": "src/iceberg/metrics/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/metrics/",
+      "description": "Metrics reporting: scan/commit reports, counters, timers, JSON serialization"
+    },
+    {
+      "name": "Parquet",
+      "cpp_path": "src/iceberg/parquet/",
+      "cpp_glob": "src/iceberg/parquet/*.{cc,h}",
+      "java_base": "java/parquet/src/main/java/org/apache/iceberg/parquet/",
+      "description": "Parquet file format: reader, writer, schema utilities, metrics"
+    },
+    {
+      "name": "Puffin",
+      "cpp_path": "src/iceberg/puffin/",
+      "cpp_glob": "src/iceberg/puffin/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/puffin/",
+      "description": "Puffin format: statistics files, file metadata, reader/writer"
+    },
+    {
+      "name": "Row",
+      "cpp_path": "src/iceberg/row/",
+      "cpp_glob": "src/iceberg/row/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/row/",
+      "description": "Row-level operations: Arrow array wrappers, partition values, struct-like interface"
+    },
+    {
+      "name": "Update",
+      "cpp_path": "src/iceberg/update/",
+      "cpp_glob": "src/iceberg/update/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/",
+      "description": "Table updates: snapshot management, fast append, expire snapshots, partition spec updates"
+    },
+    {
+      "name": "Util",
+      "cpp_path": "src/iceberg/util/",
+      "cpp_glob": "src/iceberg/util/*.{cc,h}",
+      "java_base": "java/core/src/main/java/org/apache/iceberg/util/",
+      "description": "Utilities: base64, decimal, hashing, formatting, configuration, error handling"
+    }
+  ]
+}

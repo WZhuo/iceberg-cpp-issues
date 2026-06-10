@@ -1,0 +1,1 @@
+- [Daily Module Analysis](daily-module-analysis.md) — Scheduled daily code analysis of iceberg-cpp modules, rotating one module per day for logic errors, Java inconsistencies, and incomplete features

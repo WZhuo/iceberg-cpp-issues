@@ -1,0 +1,18 @@
+# Session transcripts (JSONL)
+*.jsonl
+
+# Log files
+logs/
+
+# Claude session directories (hash-named)
+[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*-[0-9a-f]*/
+
+# Claude memory (session-level)
+memory/
+
+# macOS
+.DS_Store
+
+# Python
+__pycache__/
+*.pyc
