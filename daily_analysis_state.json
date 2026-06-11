@@ -1,7 +1,7 @@
 {
   "description": "Daily module rotation state for iceberg-cpp code analysis. Each day one module is analyzed for: logic errors, Java consistency, and completeness.",
-  "last_analyzed_index": 0,
-  "last_analyzed_at": "2026-06-10",
+  "last_analyzed_index": 1,
+  "last_analyzed_at": "2026-06-11",
   "modules": [
     {
       "name": "Core/Schema",
